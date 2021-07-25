@@ -3,9 +3,13 @@ from flask_pymongo import PyMongo
 import scrape_mars
 import os
 
-
+# To run this project, open app.py in vsc and run this python code by right-click in the code window
+#  and choosing the option "Run Python File in Terminal".
+# You will see the server started to run and then mouse over the url http://127.0.0.1:5000/ and click on "follow the link"
+# hyperlink to go to the homepage. You will see Mars webpage.
 # Create an instance of Flask
 app = Flask(__name__)
+
 
 # Use PyMongo to establish Mongo connection: 
 # Set up (DB: mars_info_app, Collection: mars_info)
@@ -40,3 +44,4 @@ def scrape():
   
 if __name__ == "__main__":
     app.run(debug=True)
+

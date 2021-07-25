@@ -1,13 +1,8 @@
-from splinter import Browser
-from bs4 import BeautifulSoup as bs
-import time
-from webdriver_manager.chrome import ChromeDriverManager
-
-
 # Declare Dependencies 
 from splinter import Browser
 from bs4 import BeautifulSoup as bs
 import time
+from webdriver_manager.chrome import ChromeDriverManager
 import requests
 import warnings
 import pandas as pd
@@ -36,7 +31,7 @@ def scrape_mars_news():
   # Visit NASA MARS News Site that to be scraped
   news_url = 'https://mars.nasa.gov/news/'
   browser.visit(news_url)
-  time.sleep(1)
+  time.sleep(3)
 
   # Scrape page into Soup
   news_html = browser.html

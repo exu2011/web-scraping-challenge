@@ -1,31 +1,31 @@
 # web-scraping-challenge
-Create a new repository for this project called web-scraping-challenge. Do not add this homework to an existing repository.
-
-
-Clone the new repository to your computer.
-
-
-Inside your local git repository, create a directory for the web scraping challenge. Use a folder name to correspond to the challenge: Missions_to_Mars.
-
-
-Add your notebook files to this folder as well as your flask app.
-
-
-Push the above changes to GitHub or GitLab.
-
-
 
 Step 1 - Scraping
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
+I have completed your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-Create a Jupyter Notebook file called mission_to_mars.ipynb and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+I create a Jupyter Notebook file called mission_to_mars.ipynb and use this to complete all of my scraping and analysis tasks. 
+Visit NASA MARS News Site that to be scraped
+Scrape page into Soup
+Debug: examine the result
+print(news_soup.prettify())
+scrape the first result from the ResultSet (list_text_all):
+JPL Mars Space Images - Featured Image
+  1) Visit the url for the Featured Space Image site here.   
+  2) Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called featured_image_url.  
+  3) Make sure to find the image url to the full size .jpg image.   
+  4) Make sure to save a complete url string for this image.  
 
 
-NASA Mars News
-
-Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. Assign the text to variables that you can reference later.
 Step 2 - MongoDB and Flask Application
-Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+I then used MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+Create an instance of Flask
+Use PyMongo to establish Mongo connection: 
+Set up (DB: mars_info_app, Collection: mars_info)
+Route to render index.html template using data from Mongo
+Find one record of data from the mongo database
+Route that will trigger the scrape function
+Run scrapped functions
+Update the Mongo database using update and upsert=True
 
 
 Start by converting your Jupyter notebook into a Python script called scrape_mars.py with a function called scrape that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
@@ -41,14 +41,13 @@ Create a root route / that will query your Mongo database and pass the mars data
 
 
 Create a template HTML file called index.html that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
-Step 3 - Submission
-To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
 
 
-The Jupyter Notebook containing the scraping code used.
 
-
-Screenshots of your final application.
+To run this project, open app.py in vsc and run this python code by right-click in the code window
+and choosing the option "Run Python File in Terminal".
+You will see the server started to run and then mouse over the url http://127.0.0.1:5000/ and click on "follow the link"
+hyperlink to go to the homepage. You will see Mars webpage.
 
 
 Submit the link to your new repository to BootCampSpot.

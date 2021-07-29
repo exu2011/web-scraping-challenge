@@ -56,9 +56,12 @@ To run this project, open app.py in visual studio code and run this python code 
 and choosing the option "Run Python File in Terminal". You will in the right lower corner "Terminal", you program will run and then mouse over the url http://127.0.0.1:5000/ and click on "follow the link"
 # hyperlink to go to the homepage. You will see Mars webpage.
 ![](2021-07-28-22-24-07.png)
+
 the image of scrolled-down part of Mars Science News
+
 ![](2021-07-28-22-51-17.png)
 also the scraping webpage image
+
 ![](2021-07-28-22-36-11.png)
 
 after click "scraping", you will see scraped webpage from Mars
@@ -66,6 +69,7 @@ after click "scraping", you will see scraped webpage from Mars
 ![](2021-07-28-22-38-48.png)
 
 also other scraped images from Nasa Mars News
+
 ![](2021-07-28-22-49-54.png)
 
 
@@ -73,21 +77,3 @@ also other scraped images from Nasa Mars News
 
 
 
-
-Submit the link to your new repository to BootCampSpot.
-
-
-Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-
-
-Hints
-
-
-Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
-
-
-Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the /scrape url is visited and new data is obtained.
-
-
-Use Bootstrap to structure your HTML template.
